@@ -540,7 +540,7 @@
 .last10 {
   width: 90%;
   position: absolute;
-  bottom: 5%;
+  bottom: 12%;
   left: 50%;
   transform: translatex(-50%);
 }
