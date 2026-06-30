@@ -186,7 +186,7 @@
 .baloon1 {
   width: 100px;
   position: absolute;
-  bottom: -250px;
+  bottom: -270px;
   left: 5%;
   animation-name: baloon1;
   animation-duration: 46s;
@@ -540,7 +540,7 @@
 .last10 {
   width: 90%;
   position: absolute;
-  bottom: 12%;
+  bottom: 3%;
   left: 50%;
   transform: translatex(-50%);
 }
@@ -556,11 +556,12 @@
 .message9,
 .message10 {
   display: none;
-  color: rgb(229, 255, 0);
+  color: rgb(255, 80, 139);
   font-size: 2.4rem;
-  font-family: courgette;
+  font-family:;
   -webkit-text-stroke: 0.1px rgba(255, 255, 255, 0.54);
   text-align: center;
+  z-index: 200;
 }
 
 .imgcont0 {
@@ -576,57 +577,181 @@
 
 .bimg1 {
   display: none;
-  width: 330px;
+  display: none;
+  width: 250px;
   position: absolute;
-  border-radius: 10px;
+  right: -100px;
+  bottom: -100px;
+  transform: rotatez(0deg);
+  animation-name: blink2;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
 }
 .bimg2 {
   display: none;
-  width: 290px;
+  width: 250px;
   position: absolute;
-  border-radius: 10px;
+  right: -180px;
+  bottom: -70px;
+  transform: rotatez(10deg);
+  animation-name: blink3;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
 }
 .bimg3 {
   display: none;
-  width: 330px;
+  width: 250px;
   position: absolute;
-  border-radius: 10px;
+  right: -60px;
+  bottom: -140px;
+  transform: rotatez(-10deg);
+  animation-name: blink4;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
 }
 
 .bimg4 {
   display: none;
-  width: 330px;
+  width: 250px;
   position: absolute;
-  border-radius: 10px;
+  right: -200px;
+  bottom: -30px;
+  transform: rotatez(-5deg);
+  animation-name: blink5;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
 }
 .bimg5 {
   display: none;
-  width: 290px;
+  width: 250px;
   position: absolute;
-  border-radius: 10px;
+  right: -50px;
+  bottom: -10px;
+  transform: rotatez(5deg);
+  animation-name: blink6;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
 }
 .bimg6 {
   display: none;
-  width: 320px;
+  width: 250px;
   position: absolute;
-  border-radius: 10px;
+  right: -160px;
+  bottom: -60px;
+  transform: rotatez(20deg);
+  animation-name: blink7;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
 }
 .bimg7 {
   display: none;
-  width: 270px;
+  width: 250px;
   position: absolute;
-  border-radius: 10px;
-}
-.vid1 {
-  display: none;
-  width: 290px;
-  position: absolute;
-  border-radius: 10px;
+  transform: rotatez(0deg);
+  animation-name: blink8;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  z-index: 2;
 }
 
-.vid2 {
+.bimg11 {
   display: none;
-  width: 290px;
+  width: 250px;
   position: absolute;
-  border-radius: 10px;
+  right: -40px;
+  bottom: -50px;
+  transform: rotatez(5deg);
+  animation-name: blink5;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+@keyframes blink2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(7deg);
+  }
+  100% {
+    transform: rotatez(0deg);
+  }
+}
+@keyframes blink3 {
+  0% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotatez(10deg);
+  }
+}
+@keyframes blink4 {
+  0% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotatez(-10deg);
+  }
+}
+@keyframes blink5 {
+  0% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotatez(-5deg);
+  }
+}
+@keyframes blink11 {
+  0% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(12deg);
+  }
+  100% {
+    transform: rotatez(5deg);
+  }
+}
+
+@keyframes blink6 {
+  0% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotatez(5deg);
+  }
+}
+@keyframes blink7 {
+  0% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(13deg);
+  }
+  100% {
+    transform: rotatez(20deg);
+  }
+}
+
+@keyframes blink8 {
+  0% {
+    transform: rotate(0px);
+  }
+  50% {
+    transform: rotate(7deg);
+  }
+  100% {
+    transform: rotatez(0deg);
+  }
 }

@@ -28,6 +28,7 @@ let bimg4 = document.querySelector(".bimg4");
 let bimg5 = document.querySelector(".bimg5");
 let bimg6 = document.querySelector(".bimg6");
 let bimg7 = document.querySelector(".bimg7");
+let bimg11 = document.querySelector(".bimg11");
 let vid1 = document.querySelector(".vid1");
 let vid2 = document.querySelector(".vid2");
 let message1 = document.querySelector(".message1");
@@ -164,6 +165,7 @@ butt6.addEventListener("click", function () {
 
 butt7.addEventListener("click", function () {
   event.preventDefault();
+  decoration.classList.remove("flex");
   butt7.classList.remove("show");
   setTimeout(function () {
     candle.classList.remove("show");
@@ -177,68 +179,70 @@ butt7.addEventListener("click", function () {
   }, 3000);
   setTimeout(function () {
     bimg2.classList.add("show");
-    bimg1.classList.remove("show");
   }, 7000);
 
   setTimeout(function () {
-    bimg4.classList.add("show");
-    bimg2.classList.remove("show");
+    bimg3.classList.add("show");
   }, 11000);
 
   setTimeout(function () {
-    bimg3.classList.add("show");
-    bimg4.classList.remove("show");
+    bimg4.classList.add("show");
   }, 15000);
   setTimeout(function () {
-    bimg6.classList.add("show");
-    bimg3.classList.remove("show");
+    bimg5.classList.add("show");
   }, 19000);
 
   setTimeout(function () {
-    message1.classList.add("show");
-    bimg7.classList.add("show");
-    bimg6.classList.remove("show");
+    bimg6.classList.add("show");
   }, 23000);
   setTimeout(function () {
-    message2.classList.add("show");
-    message1.classList.remove("show");
-    vid2.classList.add("show");
-    bimg7.classList.remove("show");
+    bimg11.classList.add("show");
   }, 27000);
   setTimeout(function () {
-    message3.classList.add("show");
-    message2.classList.remove("show");
-    bimg5.classList.add("show");
-    vid2.classList.remove("show");
+    bimg7.classList.add("show");
   }, 31000);
   setTimeout(function () {
-    message4.classList.add("show");
+    message1.classList.add("show");
+  }, 33000);
+  setTimeout(function () {
+    message1.classList.remove("show");
+    message2.classList.add("show");
+  }, 36000);
+
+  setTimeout(function () {
+    message2.classList.remove("show");
+    message3.classList.add("show");
+  }, 39000);
+
+  setTimeout(function () {
     message3.classList.remove("show");
-  }, 34000);
+    message4.classList.add("show");
+  }, 42000);
+
   setTimeout(function () {
-    message5.classList.add("show");
     message4.classList.remove("show");
-  }, 37000);
+    message5.classList.add("show");
+  }, 45000);
   setTimeout(function () {
-    message6.classList.add("show");
     message5.classList.remove("show");
-  }, 40000);
+    message6.classList.add("show");
+  }, 48000);
   setTimeout(function () {
-    message7.classList.add("show");
     message6.classList.remove("show");
-  }, 43000);
+    message7.classList.add("show");
+  }, 51000);
   setTimeout(function () {
-    message8.classList.add("show");
     message7.classList.remove("show");
-  }, 46000);
+    message8.classList.add("show");
+  }, 54000);
   setTimeout(function () {
-    message9.classList.add("show");
     message8.classList.remove("show");
-  }, 49000);
+    message9.classList.add("show");
+  }, 57000);
   setTimeout(function () {
-    message10.classList.add("show");
     message9.classList.remove("show");
-  }, 52000);
+    message10.classList.add("show");
+  }, 60000);
 
   gsap.to(".cake", {
     y: 30,
@@ -255,3 +259,113 @@ butt7.addEventListener("click", function () {
     ease: "power5.in",
   });
 });
+
+//  setTimeout(function () {
+//     message3.classList.add("show");
+//     message2.classList.remove("show");
+//     bimg5.classList.add("show");
+//     vid2.classList.remove("show");
+//   }, 31000);
+//   setTimeout(function () {
+//     message4.classList.add("show");
+//     message3.classList.remove("show");
+//   }, 34000);
+//   setTimeout(function () {
+//     message5.classList.add("show");
+//     message4.classList.remove("show");
+//   }, 37000);
+//   setTimeout(function () {
+//     message6.classList.add("show");
+//     message5.classList.remove("show");
+//   }, 40000);
+//   setTimeout(function () {
+//     message7.classList.add("show");
+//     message6.classList.remove("show");
+//   }, 43000);
+//   setTimeout(function () {
+//     message8.classList.add("show");
+//     message7.classList.remove("show");
+//   }, 46000);
+//   setTimeout(function () {
+//     message9.classList.add("show");
+//     message8.classList.remove("show");
+//   }, 49000);
+//   setTimeout(function () {
+//     message10.classList.add("show");
+//     message9.classList.remove("show");
+//   }, 52000);
+
+// ---------------------
+
+// setTimeout(function () {
+//     bimg1.classList.add("show");
+//   }, 3000);
+//   setTimeout(function () {
+//     bimg2.classList.add("show");
+//     bimg1.classList.remove("show");
+//   }, 7000);
+
+//   setTimeout(function () {
+//     bimg3.classList.add("show");
+//     bimg2.classList.remove("show");
+//   }, 11000);
+
+//   setTimeout(function () {
+//     bimg4.classList.add("show");
+//     bimg3.classList.remove("show");
+//   }, 15000);
+//   setTimeout(function () {
+//     bimg5.classList.add("show");
+//     bimg4.classList.remove("show");
+//   }, 19000);
+
+//   setTimeout(function () {
+//     bimg6.classList.add("show");
+//     bimg5.classList.remove("show");
+//   }, 23000);
+//   setTimeout(function () {
+//     bimg7.classList.add("show");
+//     bimg6.classList.remove("show");
+//   }, 27000);
+//   setTimeout(function () {
+//     message1.classList.add("show");
+//   }, 30000);
+//   setTimeout(function () {
+//     message1.classList.remove("show");
+//     message2.classList.add("show");
+//   }, 32000);
+
+//   setTimeout(function () {
+//     message2.classList.remove("show");
+//     message3.classList.add("show");
+//   }, 34000);
+
+//   setTimeout(function () {
+//     message3.classList.remove("show");
+//     message4.classList.add("show");
+//   }, 36000);
+
+//   setTimeout(function () {
+//     message4.classList.remove("show");
+//     message5.classList.add("show");
+//   }, 38000);
+//   setTimeout(function () {
+//     message5.classList.remove("show");
+//     message6.classList.add("show");
+//   }, 40000);
+//   setTimeout(function () {
+//     message6.classList.remove("show");
+//     message7.classList.add("show");
+//   }, 42000);
+//   setTimeout(function () {
+//     message7.classList.remove("show");
+//     message8.classList.add("show");
+//   }, 44000);
+//   setTimeout(function () {
+//     message8.classList.remove("show");
+//     message9.classList.add("show");
+//   }, 46000);
+//   setTimeout(function () {
+//     message9.classList.remove("show");
+//     message10.classList.add("show");
+//   }, 48000);
